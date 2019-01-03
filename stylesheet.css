@@ -1,0 +1,252 @@
+h1 {
+    color: gold;
+    font-family: 'graphcondensedbold';
+    cursor: default;
+}
+
+h2 {
+    color: magenta;
+    font-family: 'unisansheavycaps';
+    cursor: default;
+}
+
+h3 {
+    color: gold;
+    font-family: 'unisansheavyitaliccaps';
+    cursor: default;
+}
+
+h6 {
+    color: magenta;
+    font-family: unisansthincaps;
+    font-size: 50px;
+    cursor: default;
+}
+
+p {
+    color: white;
+    font-family: Helvetica;
+    cursor: default;
+}
+
+a {
+    color: magenta;
+    text-shadow: 0.5px 0.5px 0px #000000;
+    text-decoration: none;
+}
+
+a :hover {
+    color: gold;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Text rotates 90 degrees within span */
+span {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+
+}
+
+
+#top {
+    top: 0%;
+    width: 70%;
+    height: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color:rgba(255, 255, 255, 0.01);
+    /*height: 100px;
+    background-image: linear-gradient(45deg, magenta, gold); */
+    font-family: unisansheavycaps;
+    position: sticky;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#mid {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 20%;
+    text-align: center;
+}
+
+
+#top div {
+    width: 20%;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    text-align: center;
+    display: inline;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-left: 2.5%;
+    padding-right: 2.5%;*/
+}
+
+.links :hover {
+    color: gold;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#logo {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -7;
+}
+
+#logo:hover {
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Thanks StackOverflow for at least half my code */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.videobg {
+    width:  100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -8;
+
+}
+
+.videobg_v {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .videobg_v {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .videobg_v {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'graphblack';
+    src: url('fonts/web/graph-black_0-webfont.woff2') format('woff2'),
+         url('fonts/web/graph-black_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'graphbold';
+    src: url('fonts/web/graph-bold-webfont.woff2') format('woff2'),
+         url('fonts/web/graph-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'graphcondensedbold';
+    src: url('fonts/web/graphcondensed-bold-webfont.woff2') format('woff2'),
+         url('fonts/web/graphcondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'unisansheavyitaliccaps';
+    src: url('fonts/web/uni_sans_heavy_italic-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_heavy_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'unisansheavycaps';
+    src: url('fonts/web/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'unisansthinitalic';
+    src: url('fonts/web/uni_sans_thin_italic-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_thin_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'unisansthincaps';
+    src: url('fonts/web/uni_sans_thin-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*@font-face {
+    font-family: ;
+
+}*/
