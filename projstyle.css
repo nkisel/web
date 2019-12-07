@@ -1,0 +1,293 @@
+
+html {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    background-image: url('img/sf.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10%;
+}
+
+.header {
+    top: 10%;
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    background-color: transparent;
+    display: block;
+    
+    border: 2px dashed white;
+
+    font-family: "graphblack";
+    letter-spacing: 0.4em;
+    font-size-adjust: 1.5;
+    font-weight: 400;
+    font-stretch: expanded;
+    font-style: oblique;
+    text-align: center;
+    
+    color: #ffe4c4;
+
+}
+
+.header:hover {
+    animation: hovering-movement 12s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s infinite backwards forwards;
+}
+
+.content {
+    top: 30%;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* X-RAY MODE*/
+    border: 2px dashed white;
+}
+
+
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+}
+
+.projinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projtitle {
+    position: relative;
+    height: 100%;
+    margin-left: 5%;
+    font-family: "graphblack";
+    letter-spacing: 0.4em;
+    font-size-adjust: 1.2;
+    font-weight: 400;
+    font-stretch: expanded;
+    font-style: normal;
+    text-align: left;
+    
+    color: #ffe4c4;
+}
+
+.showcase {
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.showcase img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes hovering-movement {
+    0%   {transform: translate(0%, 0%);}
+    13%  {transform: translate(0.79%, -0.414%);}
+    21%  {transform: translate(-0.359%, 0.736%);}
+    25%  {transform: translate(-0.409%, -0.866%);}
+    28%  {transform: translate(-0.209%, 0.766%);}
+    33%  {transform: translate(0.257%, 0.558%);}
+    50%  {transform: translate(1.5%, -1.7%);}
+    63%  {transform: translate(-0.9%, -0.6%);}
+    75%  {transform: translate(0.5%, -1%);}
+    88%  {transform: translate(0.6%, -1.2%);}
+    100% {transform: translate(0%, 0%);}   
+}
+
+/* Make a gif for this! */
+@keyframes hovering-color {
+    0%   {background-image: linear-gradient(-30deg, orange, tan);}
+    50%  {background-image: linear-gradient(-35deg, orange, tan);}
+    100% {background-image: linear-gradient(-40deg, orange, tan);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#links {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    background-color: transparent;
+    width: 100%;
+}
+
+.button {
+    position: relative;
+    height: 50%;
+    width: 20%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Helvetica";
+    font-size: x-large;
+    text-align: center;
+    
+    /* X-RAY MODE */
+    /*
+    background-color: tan;
+    border: 2px dotted black;
+    box-shadow: 5px 3px black; */
+}
+
+.button:hover {
+    animation-name: 'hovering-movement-intense';
+    transition-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: backwards;
+    animation-iteration-count: infinite;
+    /*box-shadow: 6px 4px black;*/
+}
+
+.img-container {
+    position: relative;
+    width: 27%;
+    overflow: hidden;
+
+    background-color: transparent;
+}
+
+.img-container img {
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.label-text {
+    display: inline-block;
+    font-family: "unisansthincaps";
+    font-size-adjust: 0.2;
+    font-weight: 600;
+    font-stretch: expanded;
+    text-align: left;
+    color: bisque;
+}
+
+a {
+    text-decoration: underline dotted tan;
+    font-size-adjust: 0.2;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:hover .label-text {
+    color: tan;
+    font-family: "unisansthinitalic";
+    font-size-adjust: 0.3;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'graphblack';
+    src: url('fonts/web/graph-black_0-webfont.woff2') format('woff2'),
+         url('fonts/web/graph-black_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'graphbold';
+    src: url('fonts/web/graph-bold-webfont.woff2') format('woff2'),
+         url('fonts/web/graph-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'graphcondensedbold';
+    src: url('fonts/web/graphcondensed-bold-webfont.woff2') format('woff2'),
+         url('fonts/web/graphcondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'unisansheavyitaliccaps';
+    src: url('fonts/web/uni_sans_heavy_italic-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_heavy_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'unisansheavycaps';
+    src: url('fonts/web/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'unisansthinitalic';
+    src: url('fonts/web/uni_sans_thin_italic-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_thin_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'unisansthincaps';
+    src: url('fonts/web/uni_sans_thin-webfont.woff2') format('woff2'),
+         url('fonts/web/uni_sans_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

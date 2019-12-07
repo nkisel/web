@@ -1,3 +1,10 @@
+body {
+    background-image: -moz-linear-gradient(gold, magenta);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+
 h1 {
     color: gold;
     font-family: 'graphcondensedbold';
@@ -27,6 +34,9 @@ p {
     color: white;
     font-family: Helvetica;
     cursor: default;
+    animation-name: leftright;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
 }
 
 a {
@@ -37,7 +47,6 @@ a {
 
 a :hover {
     color: gold;
-
 }
 
 table, th, td {
@@ -152,7 +161,11 @@ span {
     }
   }
 
-
+@keyframes leftright {
+    0% { left: 100px; }
+    50% { left: 0px; }
+    100% { left: 100px; }
+}
 
 
 
@@ -171,11 +184,7 @@ span {
          url('fonts/web/graph-black_0-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'graphbold';
@@ -183,11 +192,7 @@ span {
          url('fonts/web/graph-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'graphcondensedbold';
@@ -195,11 +200,7 @@ span {
          url('fonts/web/graphcondensed-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'unisansheavyitaliccaps';
@@ -207,11 +208,7 @@ span {
          url('fonts/web/uni_sans_heavy_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'unisansheavycaps';
@@ -219,11 +216,7 @@ span {
          url('fonts/web/uni_sans_heavy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'unisansthinitalic';
@@ -231,11 +224,7 @@ span {
          url('fonts/web/uni_sans_thin_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'unisansthincaps';
@@ -243,10 +232,4 @@ span {
          url('fonts/web/uni_sans_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-/*@font-face {
-    font-family: ;
-
-}*/
