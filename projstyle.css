@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    top: 10%;
+    top: 5%;
     position: absolute;
     width: 80%;
     height: 12.5%;
@@ -34,7 +34,10 @@ body {
 }
 
 .header:hover {
-    animation: hovering-movement 12s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s infinite backwards forwards;
+    animation-name: hovering-movement;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .content {
@@ -79,16 +82,17 @@ body {
 .projtitle {
     position: relative;
     height: 100%;
-    margin-left: 5%;
-    margin-top: -5%;
-    margin-bottom: -5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -4%;
+    margin-bottom: -2.5%;
     font-family: "graphblack";
     letter-spacing: -0.1em;
     font-size-adjust: 1.2;
     font-weight: 400;
     font-stretch: expanded;
     font-style: normal;
-    text-align: left;
+    text-align: center;
     
     color: #ffe4c4;
 }
@@ -99,14 +103,16 @@ body {
     color: bisque;
     text-shadow: 1px 1px black;
     line-height: 0.8;
+    text-align: center;
 }
 
 .projdesc ul {
-    font-size: 1.25em;
+    font-size: 1em;
+    text-align: left;
 }
 
-.projdesc li {
-    font-size: 1em;
+.projdesc ul li {
+    font-size: 0.75em;
 }
 
 .showcase {
