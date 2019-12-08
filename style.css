@@ -32,8 +32,7 @@ body {
     align-items: center;
 
     width: 100%;
-    height: auto;
-    resize: both;
+    height: 50%;
     
     /* X-RAY MODE */
     /*background-color: tan;
@@ -125,8 +124,9 @@ body {
 #profile-picture {
     display: block;
     position: relative;
-    height: 100%;
+    width: 17.5%;
     overflow: hidden;
+    object-fit: contain;
     
     border-width: 2px;
     border-radius: 100%;
