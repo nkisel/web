@@ -125,9 +125,10 @@ body {
     display: block;
     position: relative;
     width: 17.5%;
-    overflow: hidden;
+    overflow: auto;
     object-fit: contain;
     border-radius: 100%;
+    opacity: 100%;
 
     /*border-width: 2px;
     border-color: black;
@@ -143,6 +144,7 @@ body {
     position: relative;
     max-height: 100%;
     max-width: 100%;
+    opacity: 100%;
 }
 
 #profile-name {
@@ -183,12 +185,15 @@ body {
 
     background-color: transparent;
     width: 100%;
+    transition: all .2s;
+    opacity: 0;
 }
 
 .button {
     position: relative;
     height: 100%;
     width: 17.5%;
+    transition: .3s all;
 
     display: flex;
     flex-direction: row;
@@ -211,7 +216,17 @@ body {
     animation-duration: 9s;
     animation-direction: backwards;
     animation-iteration-count: infinite;
+    opacity: 1;
     /*box-shadow: 6px 4px black;*/
+}
+
+.unfocused {
+    opacity: 0.5;
+}
+
+.focused {
+    opacity: 1;
+    color: goldenrod;
 }
 
 .img-container {
