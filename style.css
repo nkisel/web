@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     
     /* X-RAY MODE
     border: 2px dashed white;*/
@@ -125,6 +125,7 @@ body {
     display: block;
     position: relative;
     width: 17.5%;
+    min-width: 15%;
     overflow: auto;
     object-fit: contain;
     border-radius: 100%;
@@ -159,6 +160,7 @@ body {
     font-stretch: expanded;
     font-style: oblique;
     text-align: left;
+    text-overflow: ellipsis;
     
     color: #ffe4c4;
     /*text-shadow: 0.1em 0.1em black;*/
@@ -181,18 +183,20 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     background-color: transparent;
-    width: 100%;
+    /*width: 100%;*/
     transition: all .2s;
-    opacity: 0;
+    opacity: 0.2;
 }
 
 .button {
     position: relative;
     height: 100%;
-    width: 17.5%;
+    max-width: 270px;
+    max-height: 100px;
+    /*width: 17.5%;*/
     transition: .3s all;
 
     display: flex;
